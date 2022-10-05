@@ -17,8 +17,8 @@ export default function Main() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let Bundle = JSON.parse(window.localStorage.getItem("latest-content"));
-      setTextcontent(Bundle.md_raw);
-      setParsedcontent(Bundle.clean_html);
+      setTextcontent(Bundle.md_raw ? Bundle.md_raw : "# Hello");
+      setParsedcontent(Bundle.clean_html ? Bundle.clean_html : "Hello");
     }
   }, []);
 
