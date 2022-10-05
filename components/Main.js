@@ -20,10 +20,16 @@ export default function Main() {
         md_raw: "# Hello",
         clean_html: "<h1>Hello</h1>",
       };
-      window.localStorage.setItem("latest-content", JSON.stringify(Def_Bundle));
       let Bundle = JSON.parse(window.localStorage.getItem("latest-content"));
-      setTextcontent(Bundle.md_raw ? Bundle.md_raw : "# Hello");
-      setParsedcontent(Bundle.clean_html ? Bundle.clean_html : "Hello");
+      if (Bundle != null) {
+        setTextcontent(Bundle.md_raw ? Bundle.md_raw : "# Hello");
+        setParsedcontent(Bundle.clean_html ? Bundle.clean_html : "Hello");
+      } else {
+        window.localStorage.setItem(
+          "latest-content",
+          JSON.stringify(Def_Bundle)
+        );
+      }
     }
   }, []);
 
