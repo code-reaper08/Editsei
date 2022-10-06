@@ -88,7 +88,7 @@ export default function Main() {
   return (
     <div className="main_wrapper md:flex md:flex-row md:justify-between mt-10 flex flex-col justify-center items-center">
       <div className="Editor md:w-1/2 md:mb-0 h-[70vh] md:mr-5 w-full mb-28">
-        <span className="bg-black text-white font-mono p-2 shadow-md text-right rounded-t-md text-xl">
+        <span className="bg-black text-white font-mono p-2 text-right rounded-t-md text-xl">
           Editor {savedinfo ? "" : "●"}
         </span>
         <textarea
