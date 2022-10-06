@@ -10,7 +10,7 @@ export default function Home() {
       {/* Editor */}
       <Main />
       {/* Footer */}
-      <div className="mt-32">
+      <div className="mt-24 md:mt-32">
         <Footer />
       </div>
     </div>
