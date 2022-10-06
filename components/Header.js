@@ -25,7 +25,7 @@ export default function Header() {
           </a>
         </div>
         <div className="text-yellow-200 bg-gray-700 shadow-lg p-2 rounded-md text-sm md:text-lg">
-          Version 1.0.0
+          Version 1.0.1
         </div>
       </div>
     </nav>
