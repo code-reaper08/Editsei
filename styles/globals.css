@@ -18,9 +18,13 @@ body {
 #main-editor::selection {
   background-color: #374151;
 }
+#preview-window {
+  scrollbar-width: thin;
+  scrollbar-color: gray black;
+}
 
 #preview-window::selection {
-  background-color: black;
+  background-color: #374151;
   color: #fef08a;
 }
 
