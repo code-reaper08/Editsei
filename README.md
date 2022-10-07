@@ -12,6 +12,7 @@ Contributions of any level are always welcomed. Please ensure that the contribut
 1. **EDITsei** logo - [Vishwa R](https://github.com/code-reaper08) using **Canva**
 2. FrontBanner - [Vishwa R](https://github.com/code-reaper08) using **Canva**
 3. GitHub logo - [simpleicons](https://simpleicons.org/)
+4. Background Music - [Relaxing Music & Rain Sounds - Beautiful Piano Music, Background Music, Sleep Music • You & Me](https://www.youtube.com/watch?v=o8GrqUSdzi0) By [Soothing Relaxation](https://www.youtube.com/c/SoothingRelaxation)
 
 ## License
 
