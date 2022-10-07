@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Head from "next/head";
+import Music from "../components/Music";
 
 export default function Home() {
   return (
