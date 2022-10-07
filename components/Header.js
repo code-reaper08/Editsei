@@ -1,3 +1,5 @@
+import Music from "./Music";
+
 export default function Header() {
   return (
     <nav className=" flex flex-row justify-between items-center">
@@ -24,8 +26,11 @@ export default function Header() {
             </svg>
           </a>
         </div>
-        <div className="text-yellow-200 bg-gray-700 shadow-lg p-2 rounded-md text-sm md:text-lg">
+        <div className="text-yellow-200 bg-gray-700 shadow-lg p-2 rounded-md text-sm md:text-lg md:mr-5">
           Version 1.0.1
+        </div>
+        <div className="text-yellow-200 hidden md:block bg-gray-700 shadow-lg p-2 rounded-md text-sm md:text-lg">
+          <Music />
         </div>
       </div>
     </nav>
