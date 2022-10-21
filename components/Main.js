@@ -145,11 +145,17 @@ export default function Main() {
                 Download
               </button>
             </div>
-            {/* <div className="mr-5">
-              <button className="hover:bg-yellow-200 hover:text-black p-1 transition-all rounded-md">
+            <div className="mr-5">
+              <input
+                className="hover:bg-yellow-200 hover:text-black p-1 transition-all rounded-md"
+                type="file"
+                name="myfile"
+                onChange={onChange}
+              />
+              {/* <button className="hover:bg-yellow-200 hover:text-black p-1 transition-all rounded-md">
                 Upload
-              </button>
-            </div> */}
+              </button> */}
+            </div>
             <div>
               <button
                 onClick={copier}
