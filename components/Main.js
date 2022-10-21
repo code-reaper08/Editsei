@@ -13,6 +13,32 @@ export default function Main() {
   const [parsedcontent, setParsedcontent] = useState("<h1>Hello</h1>");
   const [savedinfo, setSavedinfo] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [text, setText] = useState();
+  let fileReader;
+
+  const onChange = (e) => {
+    let file = e.target.files;
+    fileReader = new FileReader();
+    fileReader.onloadend = handleFileRead;
+    fileReader.readAsText(file[0]);
+  };
+
+  const cleanContent = (string) => {
+    string = string.replace(/^\s*[\r\n]/gm, "");
+    let array = string.split(new RegExp(/[\r\n]/gm));
+    console.log(array);
+    array.splice(0, 3);
+    array.splice(-3);
+    return array.join("\n");
+  };
+
+  const handleFileRead = (e) => {
+    let content = fileReader.result;
+    // let text = deleteLines(content, 3);
+    content = cleanContent(content);
+    // … do something with the 'content' …
+    setText(content);
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -95,7 +121,7 @@ export default function Main() {
           cols="30"
           rows="15"
           onChange={handleTextChange}
-          value={textcontent}
+          value={text}
           className=" scroll-smooth resize-none w-full h-full font-mono text-xl border-2 rounded-t-md border-black p-3 outline-none bg-black text-yellow-200"
           name="main-editor"
           id="main-editor"
